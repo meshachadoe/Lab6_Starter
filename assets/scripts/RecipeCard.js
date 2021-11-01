@@ -172,7 +172,8 @@ class RecipeCard extends HTMLElement {
       ratingImg.alt = `${ratingStar} stars`
 
       const ratingReviews = document.createElement('span')
-      ratingReviews.textContent = `(${ratingObj.ratingCount})`
+      if (ratingObj.ratingCount)
+        ratingReviews.textContent = `(${ratingObj.ratingCount})`
 
       rating.appendChild(ratingSpan)
       rating.appendChild(ratingImg)
