@@ -6,8 +6,8 @@ const recipes = [
   'https://introweb.tech/assets/json/ghostCookies.json',
   'https://introweb.tech/assets/json/birthdayCake.json',
   'https://introweb.tech/assets/json/chocolateChip.json',
-  'assets/recipes/chickenRice.json',
-  'assets/recipes/onigirazu.json',
+  'assets/recipes/padThai.json',
+  'assets/recipes/kungPao.json',
   'assets/recipes/tteokbokki.json',
 ]
 
@@ -103,6 +103,7 @@ function bindShowMore() {
         let main = document.getElementsByTagName('main')[0]
         main.appendChild(recipeCard)
       })
+      showMoreButton.textContent = 'Show more'
     } else {
       recipes.slice(3, 6).forEach((recipe) => {
         let recipeCard = document.createElement('recipe-card')
